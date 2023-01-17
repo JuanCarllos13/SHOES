@@ -14,11 +14,10 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.igniteshoesapp"
     },
     "android": {
       "adaptiveIcon": {
@@ -28,6 +27,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "onesignal-expo-plugin",
+      {
+        "mode": "development"
+      }
+    ]
   }
 }
