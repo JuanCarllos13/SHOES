@@ -14,3 +14,7 @@ export function tagUserInfoCreate(){
     "user_email": "carlos@gmail.com"
   })
 }
+
+export function tagCartUpdate(itemsCart: string){
+  OneSignal.sendTag('cart_items_count', itemsCart)
+}
